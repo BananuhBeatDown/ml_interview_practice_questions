@@ -19,16 +19,7 @@
 	A system of percentage counters could be developed. The setup would take into account what system is actually selected so that only the options that related to the system could be applied to each individually. Once an option is selected a count for that option in that system would be incremented and stored. The system would have a minimum threshold before it could add the feature as a favorite, and a percentage relation to the other options routinely selected to detemine its status. For example an option has to be selected 3 times before it can be even be considered, but if it's used 3 times and another option is used 20 times, the option used 3 times may not break the percentage threshold of the option used 20 times and thus not considered a favorite. This issue could quickly get out of hand and isolate favorites if one option is used numerously while another is used somewhat frequently, so a cap on the times used would have to be considered to allievate the pressure of high use options.
 
 
+5. Give an example of a situation where regularization is necessary for learning a good model. How about one where regularization doesn't make sense?
 
-
-
-
-
-
-
-
-
-
-
-
-
+	Regularization is used in situations where there are large discrepancies between multiple features used in training models. If the number of users in the tens of thousands and the times they use an app is in the tens or hundreds the weight given to the users could be disproportional to the weight given to the apps when used to train the model. By using reularization the extremes of features are brought in line with other features by penalizing the loss funciton. This technique can help avoid overfitting by better generalizing the data when making predictions. 
+	A situation where regularization wouldn't be necessary could be a simple program that collects a small amount of features that is used by a very large population. As the user base grows, the need to regularize would decrease as the threat of overfitting diminishes with increased sample size.
