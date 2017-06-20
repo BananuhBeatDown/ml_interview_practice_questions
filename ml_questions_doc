@@ -9,3 +9,7 @@
 	Start by inserting the entries into a new dictionary using the user_id as the key and the tweet as the value. Preprocess and normalize all the tweets removing stop words and punctuation marks, stemming words, expanding acronyms, and reducing or eliminating repeat words. The features will then be extracted using engrams and bigrams to capture the words or phrases that will be used during feature selection. Create a new dictionary of the high frequency words or phrases. Train a K-Means clustering algorithm on the new dictionary and test it on newly captured data that has also been preprocessed. Present the results to the interested party in an visual that can be more easliy understood than statistics.
 
 
+3. In a classification setting, given a dataset of labeled examples and a machine learning model you're trying to fit, describe a strategy to detect and prevent overfitting.
+
+	Detecting overfitting would begin by splitting the dataset into training, validation, and test sets. If the model is performing well on the training, but then failing to obtain the desired accuracy on the validation and test set it is more than likely that the training set is to small or to specific. A good way to address this would be to create a larger test set by skewing the items in the training set and adding them to the original dataset to increase the number of samples and variability in training set.
+
